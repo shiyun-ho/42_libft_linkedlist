@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hshi-yun <hshi-yun@student.42.fr>          +#+  +:+       +#+        */
+/*   By: shiyun <shiyun@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 20:18:29 by hshi-yun          #+#    #+#             */
-/*   Updated: 2024/10/05 20:45:00 by hshi-yun         ###   ########.fr       */
+/*   Updated: 2024/12/21 17:23:33 by shiyun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
  */
 void ft_lstadd_front(t_list **lst, t_list *new)
 {
-    if (!lst || !*lst || !new)
+    if (!new)
         return ;
     //set the next_node has original first node lst
     new->next = *lst;

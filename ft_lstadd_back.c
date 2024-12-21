@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hshi-yun <hshi-yun@student.42.fr>          +#+  +:+       +#+        */
+/*   By: shiyun <shiyun@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 21:36:29 by hshi-yun          #+#    #+#             */
-/*   Updated: 2024/10/05 21:42:32 by hshi-yun         ###   ########.fr       */
+/*   Updated: 2024/12/21 17:29:52 by shiyun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void ft_lstadd_back(t_list **lst, t_list *new)
 {
     t_list  *last_node;
     
-    if (!lst || !*lst || !new)
+    if (!new)
         return ;
     if (lst)
     {
